@@ -42,6 +42,7 @@ steps:
       ls -lart
       echo "running java"
       java HelloWorld
+      pwd
       sleep 30s
     onFailure:
       - type: Command
