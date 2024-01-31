@@ -1,3 +1,3 @@
 FROM openjdk:8-alpine
-COPY ./target/hello-dev-*.jar /app/app.jar
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+COPY ./hello123.class /app/hello123.class
+ENTRYPOINT ["java", "/app/hello123.class"]
