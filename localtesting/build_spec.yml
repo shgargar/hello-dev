@@ -39,6 +39,7 @@ steps:
       cd src/main/java/org/example/
       echo "commit7" > output.txt
       javac HelloWorld.java
+      java HelloWorld
       sleep 30s
     onFailure:
       - type: Command
