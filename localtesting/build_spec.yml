@@ -32,13 +32,16 @@ steps:
       echo OCI_BUILD_STAGE_NAME: $OCI_BUILD_STAGE_NAME
       echo OCI_PRIMARY_SOURCE_NAME: $OCI_PRIMARY_SOURCE_NAME
       export minor_version=135
-      echo "hello world"
-      ls -lart
+      echo "=============================================="
       git branch
       df -h > output1.txt
       cd src/main/java/org/example/
       echo "commit7" > output.txt
+      echo "compiling"
       javac HelloWorld.java
+      echo "listing files"
+      ls -lart
+      echo "running java"
       java HelloWorld
       sleep 30s
     onFailure:
