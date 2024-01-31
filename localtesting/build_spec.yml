@@ -37,10 +37,12 @@ steps:
       df -h > output1.txt
       echo "commit7" > output.txt
       echo "compiling"
+      chmod 777 HelloWorld.java
       javac HelloWorld.java
       echo "listing files"
       ls -lart
       echo "running java"
+      chmod 777 HelloWorld.class
       java HelloWorld
       pwd
       sleep 30s
