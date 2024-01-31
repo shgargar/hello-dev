@@ -9,9 +9,9 @@ env:
   exportedVariables:
     - testEnv
 
-# inputArtifacts:
-#   - name: hello-dev-jar
-#     location: /workspace/Source1/hello123.class
+inputArtifacts:
+  - name: hello-dev-jar
+    location: ./hello123.class
 
 steps:
   - type: Command
@@ -39,7 +39,7 @@ steps:
       cd src/main/java/org/example/
       echo "commit7" > output.txt
       javac HelloWorld.java
-      sleep 2m 30s
+      sleep 30s
     onFailure:
       - type: Command
         timeoutInSeconds: 400
