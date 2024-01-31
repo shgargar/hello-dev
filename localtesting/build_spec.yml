@@ -35,7 +35,6 @@ steps:
       echo "=============================================="
       git branch
       df -h > output1.txt
-      cd src/main/java/org/example/
       echo "commit7" > output.txt
       echo "compiling"
       javac HelloWorld.java
