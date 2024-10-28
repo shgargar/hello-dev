@@ -8,7 +8,7 @@ env:
   variables:
     "testEnv" : "testValue1"
   vaultVariables:
-    docker_registry_password : <secret-ocid>
+    docker_registry_password : ocid1.vaultsecret.oc1.iad.amaaaaaa34lgq7aatgxf6xolzuztrerllsu4exlu4w5mn7kox3cq2pd3vklq
   exportedVariables:
     - patch_number
     - build_Result
