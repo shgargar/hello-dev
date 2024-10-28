@@ -1,6 +1,6 @@
 version: 0.1
 component: build
-timeoutInSeconds: 6000
+timeoutInSeconds: 30000
 runAs: root
 shell: bash
 env:
@@ -16,7 +16,7 @@ env:
 steps:
   - type: Command
     name: "Build Source"
-    timeoutInSeconds: 4000
+    timeoutInSeconds: 30000
     command: |
       echo $testEnv
       export testEnv=5.0
